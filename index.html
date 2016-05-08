@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Javaprojects by shahrukhatik</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Javaprojects</h1>
+        <h2>Projects and Assignments completed using Java</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/shahrukhatik/JavaProjects/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/shahrukhatik/JavaProjects/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/shahrukhatik/JavaProjects" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h3>
+<a id="welcome-to-shahrukhs-java-pages" class="anchor" href="#welcome-to-shahrukhs-java-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to Shahrukhs Java Pages.</h3>
+
+<p>This webpage will contain a few projects I created during my coursework through Winona State University. It will contain  the raw coding with some comments which you can view below. All my other projects will be available in my github repository.                              </p>
+
+<h1>
+<a id="cups-conversion" class="anchor" href="#cups-conversion" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cups Conversion</h1>
+
+<p>Description: This application will be used to convert a user given volume in cups to its equivalent number of teaspoons, tablespoons, ounces, pint, quarts, or gallons. This was the first java application I ever made!</p>
+
+<pre><code>import java.lang.*;
+import java.util.*;
+
+/* 
+    Date: 1st February 2016
+
+    This program will allow us to view what a certain volume of cups would be in
+    tablespoons, teaspoons etc.
+
+    This program will need the number of cups from the user.
+    Then the program will output the neccessary teaspoons, tablespoons etc.
+
+                    4 cups equals 4 * 48 = 192 teaspoons
+                    4 cups equals 4 * 16 =  64 tablespoons
+                    4 cups equals 4 * 8   =  32 ounces
+                    4 cups equals 4 * 0.5   =  2 pints
+                    4 cups equals 4 * 0.25   =  1 quart
+                    4 cups equals 4 * 0.0625   =   0.2500 gallon
+
+    java.util and java.text will be used
+
+    The input and output will be simple text based interactions using 
+    system.out.Println and scanner
+
+    Psuedocode: 
+            Output a welcome message
+            Output a message that describes what the program will do
+            Output a message requesting the number cups the user wishes to 
+            convert
+
+            read the input value and store it
+
+            calculate the teaspoons, tablespoons etc and store it.
+
+            output a message that displays this values so the user can see
+            it
+*/
+
+class cupsconversion
+{
+
+public static void main(String[] args)
+{
+    System.out.println("Welcome to Shahrukhs Cup Conversion Program");
+    System.out.println();
+    System.out.println("This application will be used to convert a user given volume");
+    System.out.println("in cups to its equivalent number of teaspoons, tablespoons, ounces, pints");
+    System.out.println("quarts, or gallons");
+    System.out.println("\n \n");
+    System.out.println("Please type in a +ve real value for the number of cups you want converted");
+    System.out.print(" Number of cups = ");
+
+    Scanner input = new Scanner(System.in);
+
+    float cups; // We are storing the input the user puts in float.
+
+    cups = input.nextFloat(); // read and convert user input and store it
+
+    float teaspoons = cups * 48;
+
+    float tablespoons = cups * 16;
+
+    float ounces = cups * 8;
+
+    float pints = cups * 0.5f; // have to add f for java to caclulate this correctly.
+
+    float quarts = cups * 0.25f;
+
+    float gallons = cups * 0.0625f;
+
+    System.out.println(" Given " + cups + " cups, the volume in teaspoons are " + teaspoons);
+    System.out.println(" Given " + cups + " cups, the volume in tablespoons are " + tablespoons);
+    System.out.println(" Given " + cups + " cups, the volume in ounces are " + ounces); 
+    System.out.println(" Given " + cups + " cups, the volume in pints are " + pints);   
+    System.out.println(" Given " + cups + " cups, the volume in quarts are " + quarts);
+    System.out.println(" Given " + cups + " cups, the volume in gallons are " + gallons);
+
+}
+
+}
+</code></pre>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
