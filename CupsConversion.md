@@ -1,6 +1,6 @@
 # Cups Conversion
 
-Description: This application will be used to convert a user given volume in cups to its equivalent number of teaspoons, tablespoons, ounces, pint, quarts, or gallons. This was the first java application i ever made!
+Description: This application will be used to convert a user given volume in cups to its equivalent number of teaspoons, tablespoons, ounces, pint, quarts, or gallons. This was the first java application I ever made!
 
     import java.lang.*;
     import java.util.*;
